@@ -23,7 +23,7 @@ class Project
     
      def backers
         projects_backed.map do |list|
-            list.backer.name
+            list.backer
         end  
      end
 end
