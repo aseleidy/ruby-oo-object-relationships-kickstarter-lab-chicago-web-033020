@@ -16,7 +16,7 @@ class Backer
     def projects 
       binding.pry
       projects = ProjectBacker.all.select do |project|
-        project.backer == self.name
+        project.name == self.name
       end
     end 
     
