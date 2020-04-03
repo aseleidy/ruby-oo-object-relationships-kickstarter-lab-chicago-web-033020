@@ -14,4 +14,16 @@ class Project
         ProjectBacker.new(self, backer)
         @backer = backer
     end
+    
+    def projects_backed  
+      ProjectBacker.all.select do |list|
+        list.project.title == self.title
+      end
+    end 
+    
+     def backers
+        projects_backed.map do |list|
+            list.backers
+        end  
+     end
 end
