@@ -14,7 +14,7 @@ class Backer
     
     def projects 
       projects = ProjectBacker.all.select do |project|
-        project.backer == self.backer
+        project.backer == self.name
       end
     end 
     
