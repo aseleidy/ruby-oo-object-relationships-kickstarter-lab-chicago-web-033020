@@ -1,3 +1,4 @@
+require 'pry'
 require_relative 'project.rb'
 require_relative 'project_backer.rb'
 
@@ -13,6 +14,7 @@ class Backer
     end
     
     def projects 
+      binding.pry
       projects = ProjectBacker.all.select do |project|
         project.backer == self.name
       end
@@ -25,3 +27,4 @@ class Backer
      end
 
 end
+
