@@ -9,7 +9,7 @@ class Backer
     end 
 
     def back_project(project)
-        ProjectBacker.new(title, self)
+        ProjectBacker.new(project, self)
     end
     
     def projects 
