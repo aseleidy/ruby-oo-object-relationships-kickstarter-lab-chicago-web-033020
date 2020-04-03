@@ -14,16 +14,16 @@ class Backer
     end
     
     def projects 
-      ProjectBacker.all.select do |list|
-        list.backer.name == self.name
-      end
+        ProjectBacker.all.select do |list|
+          list.backer.name == self.name
+        end
     end 
     
-     def backed_projects
+    def backed_projects
         projects.map do |list|
-            list.project
+          list.project
         end  
-     end
+    end
 
 end
 
