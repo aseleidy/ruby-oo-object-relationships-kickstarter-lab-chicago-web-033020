@@ -23,6 +23,7 @@ class Project
     
      def backers
         projects_backed.map do |list|
+          binding.pry 
             list.backers
         end  
      end
