@@ -19,8 +19,8 @@ class Backer
     end 
     
      def backed_projects
-        projects.map do |project|
-            project.title
+        projects.map do |list|
+            list.project
         end  
      end
 
