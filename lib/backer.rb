@@ -21,7 +21,7 @@ class Backer
      def backed_projects
         
         projects.map do |project|
-            self == project.backer
+            ProjectBacker.projects
         end  
      end
 
