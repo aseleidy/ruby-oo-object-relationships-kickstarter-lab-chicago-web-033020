@@ -21,9 +21,10 @@ class Project
       end
     end 
     
-     def backers
-        projects_backed.map do |list|
-            list.backer
-        end  
-     end
+    def backers
+      projects_backed.map do |list|
+        list.backer
+      end  
+    end
+
 end
