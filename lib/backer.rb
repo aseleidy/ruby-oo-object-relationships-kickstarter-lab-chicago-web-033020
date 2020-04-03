@@ -21,7 +21,7 @@ class Backer
      def backed_projects
         
         projects.map do |project|
-            ProjectBacker.title
+            project.title
         end  
      end
 
